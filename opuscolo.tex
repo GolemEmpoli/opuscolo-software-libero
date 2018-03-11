@@ -55,6 +55,9 @@
 \usepackage{framed}
 \usepackage{tikz}
 
+% nome del mese in italiano della compilazione
+\usepackage{datetime}
+
 %~ BlockQuotes serve xcolor e framed e tikz
 \newcommand*\quotefont{\fontfamily{pbk}}
 \usepackage{framed}
@@ -75,7 +78,7 @@ xshift=15pt,yshift=10pt]
 {\hfill\closequote\end{quote}\end{snugshade}}
 
 % PUBLISHER LOGO -- AAHH!!! PUBLISHER!!! Use Scribus! xD
-\newcommand*{\plogo}{\fbox{$\mathcal{GOLEM}$}}
+\newcommand*{\plogo}{\fbox{Gruppo Operativo Linux Empoli}}
 
 % ~~~~~~~~~~~ FIRST PAGE BEGIN ~~~~~~~~~~~~~ %
 \newcommand*{\titleAT}{\begingroup % Create the command for including the title page in the document
@@ -133,6 +136,8 @@ Rilasciato sotto licenza GPL (salvo dove diversamente specificato)\\
 \texttt{golem.linux.it}
 
 \textit{Impaginato con \LaTeX}
+\\
+Autoprodotto in \textit{\monthname{} \the\year}
 \vspace*{\footdrop} % Whitespace under the publisher text
 
 \rule{\textwidth}{0.4pt}\par % Thin horizontal line
@@ -484,7 +489,7 @@ imponderato e imponderabile, possono genialmente inserirsi in ogni
 progetto, per opera di ogni libero programmatore. Infatti l'evoluzione
 non ha tempi preordinati, è veloce o lenta in base alle condizioni
 ambientali, a quanto è necessario o richiesto dal programma.
-\par\emph{tratto dall'articolo «Darwin contro il dottor Moreau» dell'associazione GOLEM}
+\par\emph{dall'articolo «Darwin contro il dottor Moreau» dell'associazione GOLEM}
 \end{shadequote}
 
 A differenza del software proprietario, il software libero appare meno
